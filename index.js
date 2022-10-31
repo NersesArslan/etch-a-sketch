@@ -1,19 +1,14 @@
 const container = document.querySelector('.container');
 
+function gridMaker(gridNum){
 
-
-for(let i = 0; i < 16; i++){
-let box = document.createElement('div');
-box.classList.add('box');
-    for(let j = 0; j < 16; j++){
-        let column = document.createElement('div');
-        column.classList.add('column');
-        box.appendChild(column);
-    }
-container.appendChild(box);
+for(let i = 0; i < gridNum**2; i++){
+    let box = document.createElement('div');
+    box.classList.add('grid');
+    container.appendChild(box); 
 }
 
+}
 
-
-
+gridMaker(16);
 
