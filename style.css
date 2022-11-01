@@ -11,8 +11,8 @@
   border: 1px solid greenyellow;
   grid-template-columns: repeat(16, 1fr);
   grid-gap: 0;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
 
 .grid {
