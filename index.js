@@ -1,14 +1,16 @@
 const container = document.querySelector('.container');
 
-function gridMaker(gridNum){
-
-for(let i = 0; i < gridNum**2; i++){
-    let box = document.createElement('div');
-    box.classList.add('grid');
-    container.appendChild(box); 
+for(let i = 0; i < 16**2; i++){
+  const grid = document.createElement('div');
+  grid.classList.add('grid');
+  container.appendChild(grid);
 }
 
+grid = document.querySelectorAll('div.grid');
+
+grid.forEach((div) => {
+  div.addEventListener('mouseover', function() {
+    div.style.background = "#3C9EE7";
+  })
 }
-
-gridMaker(16);
-
+)
