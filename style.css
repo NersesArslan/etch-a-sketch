@@ -17,16 +17,10 @@
   background-color: yellowgreen;
 }
 .container {
-  border: 4px double darkblue;
+  border: 4px solid burlywood;
   border-radius: 8px;
   display: grid;
-  grid-template-columns: repeat(num, 1fr);
   grid-gap: 0px;
-  height: 300px;
-  width: 300px;
-}
-
-.grid {
-  
- 
+  height: 400px;
+  width: 400px;
 }
